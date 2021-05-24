@@ -21,13 +21,13 @@ background: #000000;
 var DOIFGOIUDSYGFIOISJHDGFKJSHGFIKUGSEOIUFGHOSLIUGHSDFG=document.getElementById("VSDBFIKSHDGVFOIUYGEiuHSAGDVFIUHGSDIUyfg68e5wrt8f76tegfydgsi7yter876t234876rt9o8sd7tafg")
 
 var r=document.location.href.split("?")[1]
-if(r==""){r="https://0j3.github.io/random/hri.mp4"}else{
+if(r==""||!r){r = document.location.hash.replace("#","")}
+if(r==""||!r){r="https://0j3.github.io/random/hri.mp4"}else{
   var s = r.split("&")
   if(s[1]){
     r=s.shift()+"?"+s.join("&")
   }
 }
-if(r==""){r = document.location.hash.replace("#","")}
 if(r.startsWith && !r.startsWith("https")){
   if(r.startsWith("http://")){
     r=r.replace("http://","https://")
