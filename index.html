@@ -18,7 +18,18 @@ background: #000000;
 <video id="VSDBFIKSHDGVFOIUYGEiuHSAGDVFIUHGSDIUyfg68e5wrt8f76tegfydgsi7yter876t234876rt9o8sd7tafg" controls="" autoplay="" style="position: fixed; top:0; left:0; width:100vw; height:100vh; display:block;"></video>
 <script>
 var DOIFGOIUDSYGFIOISJHDGFKJSHGFIKUGSEOIUFGHOSLIUGHSDFG=document.getElementById("VSDBFIKSHDGVFOIUYGEiuHSAGDVFIUHGSDIUyfg68e5wrt8f76tegfydgsi7yter876t234876rt9o8sd7tafg")
-DOIFGOIUDSYGFIOISJHDGFKJSHGFIKUGSEOIUFGHOSLIUGHSDFG.src=document.location.hash.replace("#","")
+var r = document.location.hash.replace("#","")
+if(r==""){r="https://0j3.github.io/random/hri.mp4"}
+if(r.startsWith && !r.startsWith("https")){
+  if(r.startsWith("http://")){
+    r=r.replace("http://","https://")
+  }else if(r.startsWith("//")){
+    r="https:"+r
+  }else{
+    r="https://"+r
+  }
+}
+DOIFGOIUDSYGFIOISJHDGFKJSHGFIKUGSEOIUFGHOSLIUGHSDFG.src=r
 DOIFGOIUDSYGFIOISJHDGFKJSHGFIKUGSEOIUFGHOSLIUGHSDFG.play()
 </script>
 </body>
