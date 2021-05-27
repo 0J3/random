@@ -1,0 +1,44 @@
+<html>
+<head>
+<meta name="title" content="HTML5 Video Player" />
+<title>HTML5 Media Player</title>
+<meta name="description" content="See URL # or ? value for video source URL" />
+<meta property="og:type" content="website" />
+<meta name="theme-color" content="#FF0000" />
+<meta property="og:url" content="https://media.nora.lgbt/hri/" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="og:site_name" content="0J3's HTML5 Video Player" />
+<style>
+body {
+background: #000000;
+}
+</style>
+</head>
+<body>
+<noscript>Scripts must be enabled for this video player to work!</noscript>
+<video id="VSDBFIKSHDGVFOIUYGEiuHSAGDVFIUHGSDIUyfg68e5wrt8f76tegfydgsi7yter876t234876rt9o8sd7tafg" loop="" controls="" autoplay="" style="position: fixed; top:0; left:0; width:100vw; height:100vh; display:block;"></video>
+<script>
+var DOIFGOIUDSYGFIOISJHDGFKJSHGFIKUGSEOIUFGHOSLIUGHSDFG=document.getElementById("VSDBFIKSHDGVFOIUYGEiuHSAGDVFIUHGSDIUyfg68e5wrt8f76tegfydgsi7yter876t234876rt9o8sd7tafg")
+
+var r=document.location.href.split("?")[1]
+if(r==""||!r){r = document.location.hash.replace("#","")}
+if(r==""||!r){r="https://0j3.github.io/random/hri.mp4"}else{
+  var s = r.split("&")
+  if(s[1]){
+    r=s.shift()+"?"+s.join("&")
+  }
+}
+if(r.startsWith && !r.startsWith("https")){
+  if(r.startsWith("http://")){
+    r=r.replace("http://","https://")
+  }else if(r.startsWith("//")){
+    r="https:"+r
+  }else{
+    r="https://"+r
+  }
+}
+DOIFGOIUDSYGFIOISJHDGFKJSHGFIKUGSEOIUFGHOSLIUGHSDFG.src=r
+DOIFGOIUDSYGFIOISJHDGFKJSHGFIKUGSEOIUFGHOSLIUGHSDFG.play()
+</script>
+</body>
+</html>
