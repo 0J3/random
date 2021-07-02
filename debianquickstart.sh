@@ -73,27 +73,11 @@ if [ "$UID" -eq "0" ]; then
   propmt -s "\t**** DONE!!"
 
 else
-
   # Error message
   prompt -e "\n [ Error! ] -> Run me as root "
 
   # persisted execution of the script as root
-  read -p "[ trusted ] specify the root password : " -t${MAX_DELAY} -s
-  [[ -n "$REPLY" ]] && {
-    sudo -S <<< $REPLY $0
-  } || {
-    prompt  "\n Operation canceled  Bye"
-    exit 1
-  }
-fi
 
-# Checking for root access and proceed if it is present
-if [ "$UID" -eq "$ROOT_UID" ]; then
-else
-  # Error message
-  prompt -e "\n [ Error! ] -> Run me as root "
-
-  # persisted execution of the script as root
   read -p "[ trusted ] specify the root password : " -t${MAX_DELAY} -s
   [[ -n "$REPLY" ]] && {
     sudo -S <<< $REPLY $0
