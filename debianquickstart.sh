@@ -2,8 +2,6 @@
 # DEBIAN QUICKSTART
 # COPYRIGHT (C) 2021 0J3. ALL RIGHTS RESERVED.
 
-
-ROOT_UID=0
 #COLORS
 CDEF=" \033[0m"                                     # default color
 CCIN=" \033[0;36m"                                  # info color
@@ -44,7 +42,7 @@ function has_command() {
 
 prompt -w "\t *** Checking for root access..."
 # Checking for root access and proceed if it is present
-if [ "$UID" -eq "$ROOT_UID" ]; then
+if [ "$UID" -eq "0" ]; then
 
   prompt -s "\t *** Running as root!"
   prompt -i "\t *** Updating Apt"
