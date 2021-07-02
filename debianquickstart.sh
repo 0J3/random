@@ -3,6 +3,7 @@
 # COPYRIGHT (C) 2021 0J3. ALL RIGHTS RESERVED.
 
 
+ROOT_UID=0
 #COLORS
 CDEF=" \033[0m"                                     # default color
 CCIN=" \033[0;36m"                                  # info color
